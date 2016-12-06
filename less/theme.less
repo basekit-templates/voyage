@@ -80,14 +80,38 @@ body {
 }
 
 .oval {
+    position: relative;
     width: 100%;
-    height: 340px;
-    background-color: #000000;
-    border-top-right-radius: 100%;
-    border-top-left-radius: 50%;
-    margin-top: -100px;
-    position: absolute;
-    border-radius: 100%;
+    height: 135px;
+    overflow: hidden;
+    margin-top: -135px;
+
+   @media only screen and (max-width: 1024px) {
+        height: 100px;
+        margin-top: -100px;
+   }
+
+
+   @media @mobile {
+        height: 80px;
+        margin-top: -80px;
+   }
+
+
+    &:after {
+        width: 150%;
+        height: 500%;
+        border-radius: 100%;
+        background-color: #080808;
+        border-top-left-radius: 200%;
+        border-top-right-radius: 200%;
+        position: absolute;
+        content: "";
+        left: -25%;
+        -webkit-box-shadow: inset 0px 0px 50px 0px rgba(148,148,148,1);
+        -moz-box-shadow: inset 0px 0px 50px 0px rgba(148,148,148,1);
+        box-shadow: inset 0px 0px 110px 0px rgb(130, 129, 129);
+    }
 }
 
 
