@@ -169,7 +169,7 @@
         },
         "navigation": {
             "font__navigation--font-family": "@font-swatch6-font-family",
-            "font__navigation--font-size": "20px",
+            "font__navigation--font-size": "16px",
             "font__navigation--font-weight": "700",
             "font__navigation--line-height": "26px",
             "font__navigation--letter-spacing": "2px",

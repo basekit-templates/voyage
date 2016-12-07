@@ -23,6 +23,7 @@ html.nav-open {
 
 
 .navigation-body {
+	@media @tablet {
 	z-index: -1000;
 	outline: 0;
 	height: 0;
@@ -33,6 +34,7 @@ html.nav-open {
 	-moz-transition: opacity 0.8s ease;
 	-o-transition: opacity 0.8s ease;
 	transition: opacity 0.8s ease;
+}
 }
 
 // When nav is open
@@ -122,9 +124,13 @@ html.nav-open {
 
 
 .navigation-list {
-    max-width: 500px;
-    margin: 13% auto 0;
-    text-align: center;
+    max-width: 100%;
+    margin: 0;
+
+    @media @tablet {
+    	max-width: 500px;
+    	margin: 13% auto 0;
+    }
 
     @media @mobile {
     	margin-top: 20%;
@@ -155,13 +161,21 @@ html.nav-open {
 
 
 .navigation-body .navigation-item {
-	display: block;
+	display: inline-block;
+
+	@media @tablet {
+		display: block;
+	}
 
 	&, * {
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 	}
 }
 
+
+.navigation-item--child {
+	display: block!important;
+}
 
 
 
@@ -221,11 +235,6 @@ html.nav-open {
 	-moz-transition: all 0.15s ease-in-out;
 	-o-transition: all 0.15s ease-in-out;
 	transition: all 0.15s ease-in-out;
-}
-
-// Open Folder navigation item
-.navigation-item.folder.open {
-	margin-bottom: 30px;
 }
 
 // Navigation Item Name
@@ -295,7 +304,6 @@ html.nav-open {
 	-moz-transition: opacity 0.5s ease-in-out;
 	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
-	position: relative;
 
 	// Open folder item
 
@@ -303,6 +311,10 @@ html.nav-open {
 		display: block;
 		opacity: 1;
 		height: auto;
+	}
+
+	@media @tablet {
+		position: relative;
 	}
 
 }
@@ -329,6 +341,12 @@ html.nav-open {
 // ------------------------------
 // #Navigation Toggle
 // ------------------------------
+
+.navigation-toggle {
+	display: none;
+}
+
+@media @tablet {
 
 .navigation-toggle {
 	.animation;
@@ -416,4 +434,5 @@ html.nav-open {
 			transform: rotate(-45deg);
 		}
 	}
+}
 }
