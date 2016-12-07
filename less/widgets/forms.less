@@ -36,7 +36,7 @@ input[type="password"],
 textarea {
     background-color: transparent;
     border: 0;
-    box-shadow: inset 0px -1px 0px 0px lighten(@color__p--text, 45%);
+    box-shadow: inset 0px -1px 0px 0px darken(@color__p--text, 70%);
     font-size:  @font__p--font-size;
     font-weight: @font__p--font-weight;
     display: inline-block;
@@ -211,6 +211,7 @@ textarea {
     width: 100%;
     position: relative;
     z-index: 1000;
+    border-bottom: 1px solid white;
 
     @media @bp-global-small {
         font-size: bkscale(@font__p--font-size, 0.9);

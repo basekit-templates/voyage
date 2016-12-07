@@ -66,16 +66,16 @@ body {
     background-color: @color__container--background;
 
     @media @bp-global-large {
-        margin-top: @value__widget--spacing--desktop;
+        padding-top: @value__widget--spacing--desktop;
     }
     @media @bp-global-medium {
-        margin-top: @value__widget--spacing--laptop;
+        padding-top: @value__widget--spacing--laptop;
     }
     @media @tablet {
-        margin-top: @value__widget--spacing--tablet;
+        padding-top: @value__widget--spacing--tablet;
     }
     @media @mobile {
-        margin-top: @value__widget--spacing--mobile;
+        padding-top: @value__widget--spacing--mobile;
     }
 }
 
@@ -85,16 +85,21 @@ body {
     height: 135px;
     overflow: hidden;
     margin-top: -135px;
+    z-index: 9;
+
+    @media @bp-global-medium { 
+        margin-top: -135px;
+    }
 
    @media only screen and (max-width: 1024px) {
         height: 100px;
-        margin-top: -100px;
+        margin-top: -150px;
    }
 
 
    @media @mobile {
         height: 80px;
-        margin-top: -80px;
+        margin-top: -60px;
    }
 
 
@@ -111,6 +116,9 @@ body {
         -webkit-box-shadow: inset 0px 0px 50px 0px rgba(148,148,148,1);
         -moz-box-shadow: inset 0px 0px 50px 0px rgba(148,148,148,1);
         box-shadow: inset 0px 0px 110px 0px rgb(130, 129, 129);
+        @media @mobile {
+            box-shadow: inset 0px 0px 60px 0px rgb(130, 129, 129);
+        }
     }
 }
 
