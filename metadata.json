@@ -174,7 +174,8 @@
             "font__navigation--line-height": "26px",
             "font__navigation--letter-spacing": "2px",
             "color__navigation--text": "#9a9ca5",
-            "color__navigation--text--selected": "#fff"
+            "color__navigation--text--selected": "#fff",
+            "color__navigation--text--hover": "#fff"
         },
         "form": {
             "color__form-legend--text" : "#fff",
