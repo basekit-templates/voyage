@@ -165,7 +165,10 @@
             "color__p--text": "white"
         },
         "header": {
-            "color__header--background" : "#22242b"
+            "color__header--background" : "#262626"
+        },
+        "footer": {
+            "color__footer--background" : "#262626"
         },
         "navigation": {
             "font__navigation--font-family": "@font-swatch6-font-family",
@@ -173,7 +176,7 @@
             "font__navigation--font-weight": "700",
             "font__navigation--line-height": "26px",
             "font__navigation--letter-spacing": "2px",
-            "color__navigation--text": "#9a9ca5",
+            "color__navigation--text": "#d8d8d8",
             "color__navigation--text--selected": "#fff",
             "color__navigation--text--hover": "#fff"
         },
@@ -204,7 +207,7 @@
             "color__slideshow-description--text" : "#bebebe"
         },
         "feature": {
-            "color__feature-content--background": "#26292f",
+            "color__feature-content--background": "#000",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
             "font__feature-headline--font-size" : "72px",
             "font__feature-headline--font-weight" : "700",
