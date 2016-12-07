@@ -96,9 +96,13 @@ body {
         margin-top: -150px;
    }
 
+   @media @tablet {
+        height: 80px;
+   }
+
 
    @media @mobile {
-        height: 80px;
+        height: 30px;
         margin-top: -60px;
    }
 
@@ -116,8 +120,11 @@ body {
         -webkit-box-shadow: inset 0px 0px 50px 0px rgba(148,148,148,1);
         -moz-box-shadow: inset 0px 0px 50px 0px rgba(148,148,148,1);
         box-shadow: inset 0px 0px 110px 0px rgb(130, 129, 129);
+        @media @tablet {
+            box-shadow: inset 0px 0px 40px 0px #828181
+        }
         @media @mobile {
-            box-shadow: inset 0px 0px 60px 0px rgb(130, 129, 129);
+            box-shadow: inset 0px 0px 20px 0px #828181
         }
     }
 }
