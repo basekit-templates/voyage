@@ -380,16 +380,15 @@ body {
     }
 }
 
-
-// Feature Arrow Deletion
-.widget[data-widget-type="feature"].bk-tpl-hidden + .feature-arrow {
-    display: none;
+.widget[data-widget-type="feature"].bk-tpl-hidden + .feature-arrow,
+.feature-arrow {
+  display: none;
 }
 
+.widget[data-widget-type="feature"] + .feature-arrow,
 .feature + .feature-arrow {
-    display: block;
+  display: block;
 }
-
 
 
 
