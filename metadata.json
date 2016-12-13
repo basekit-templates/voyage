@@ -3,7 +3,7 @@
     "widgetVersion": 2,
     "thumbnail":"voyage.png",
     "templateType":"standard",
-    "pageTypes": [ "home", "slideshow" ],
+    "pageTypes": [ "home" ],
     "screenshot":"voyage-screenshot.jpg",
      "images":[
         "images/gallery/gallery-image--1.jpg",
