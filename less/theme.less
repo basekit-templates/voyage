@@ -274,7 +274,12 @@ body {
     }
 }
 
-
+.widget[data-widget-type="feature"].bk-tpl-hidden {
+    // Feature Arrow
+    .feature-arrow {
+        display: none;
+    }
+}
 
 
 // Header: Additional
@@ -290,11 +295,6 @@ body {
     min-height: auto;
     border-bottom: 1px solid lighten(@color__container--background, 30%);
 
-
-    // Feature Arrow
-    .feature-arrow {
-        display: none;
-    }
 
     // Flex Item
     @media @mobile {
