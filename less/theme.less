@@ -274,13 +274,6 @@ body {
     }
 }
 
-.widget[data-widget-type="feature"].bk-tpl-hidden {
-    // Feature Arrow
-    .feature-arrow {
-        display: none;
-    }
-}
-
 
 // Header: Additional
 // ------------------------------
@@ -388,6 +381,10 @@ body {
 }
 
 
+// Feature Arrow Deletion
+.widget[data-widget-type="feature"].bk-tpl-hidden + .feature-arrow {
+    display: none;
+}
 
 
 // ------------------------------
