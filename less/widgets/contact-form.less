@@ -117,13 +117,6 @@
 // Advanced Contact Form
 // ------------------------------
 
-.advancedcontactform__legend {
-	font-family: @font__h2--font-family;
-	font-size: @font__h2--font-size;
-	line-height: @font__h2--line-height;
-	color: @color__form-legend--text;
-}
-
 .advancedcontactform__button {
 	margin-top: 10px;
 }
@@ -139,7 +132,8 @@
 .responsivecolumns {
 
 	// Legend
-	.contactform__legend {
+	.contactform__legend,
+	.advancedcontactform__legend {
 		width: 100%;
 	    background-color: transparent;
 	    position: relative;
@@ -150,13 +144,15 @@
 	}
 
 	// Form Body
-	.contactform__form-body {
+	.contactform__form-body,
+	.advancedcontactform__form-body {
 		float: none;
 		width: auto;
 		padding: 0;
 	}
 
-	.contactform__form-group {
+	.contactform__form-group
+	.advancedcontactform__form-group {
 		margin-bottom: 16px;
 	}
 }
