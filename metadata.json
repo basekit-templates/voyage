@@ -6,15 +6,7 @@
     "pageTypes": [ "home" ],
     "screenshot":"voyage-screenshot.jpg",
      "images":[
-        "images/gallery/gallery-image--1.jpg",
-        "images/gallery/gallery-image--2.jpg",
-        "images/gallery/gallery-image--3.jpg",
-        "images/gallery/gallery-image--4.jpg",
-        "images/gallery/gallery-image--5.jpg",
-        "images/gallery/gallery-image--6.jpg",
-        "images/gallery/gallery-image--7.jpg",
-        "images/gallery/gallery-image--8.jpg",
-        "images/gallery/gallery-image--9.jpg"
+        "images/image-1.jpg"
     ],
     "colorSwatches":
     {
@@ -32,7 +24,7 @@
        "title": "Orbiton / Space Mono",
         "font1": {
             "font-family": "\"Orbitron\", sans-serif",
-            "font-size": "32px",
+            "font-size": "36px",
             "font-weight": "400",
             "line-height": "54px",
             "color": "@color-swatch4",
@@ -40,17 +32,17 @@
         },
         "font2": {
             "font-family": "\"Orbitron\", sans-serif",
-            "font-size": "24px",
+            "font-size": "30px",
             "font-weight": "400",
-            "line-height": "38px",
+            "line-height": "42px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
             "font-family": "\"Orbitron\", sans-serif",
-            "font-size": "22px",
+            "font-size": "24px",
             "font-weight": "400",
-            "line-height": "42px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -134,9 +126,9 @@
         },
         "typography": {
             "font__h1--font-family": "@font-swatch1-font-family",
-            "font__h1--font-size": "30px",
+            "font__h1--font-size": "36px",
             "font__h1--font-weight": "@font-swatch1-font-weight",
-            "font__h1--line-height": "44px",
+            "font__h1--line-height": "48px",
             "font__h1--letter-spacing": "@font-swatch1-letter-spacing",
             "color__h1--text": "white",
             "font__h2--font-family" : "@font-swatch2-font-family",
@@ -146,9 +138,9 @@
             "font__h2--letter-spacing" : "inherit",
             "color__h2--text": "white",
             "font__h3--font-family" : "@font-swatch3-font-family",
-            "font__h3--font-size" : "22px",
+            "font__h3--font-size" : "24px",
             "font__h3--font-weight" : "@font-swatch3-font-weight",
-            "font__h3--line-height" : "34px",
+            "font__h3--line-height" : "36px",
             "font__h3--letter-spacing" : "inherit",
             "color__h3--text": "#fff000",
             "font__h4--font-family" : "@font-swatch4-font-family",
