@@ -200,13 +200,13 @@ body {
 // #Header
 // ------------------------------
 
-.template-header {
+[data-widget-type="feature"] + .template-header {
+    background: transparent;
+    border: none;
     position: absolute;
     top: 0;
     z-index: 10002;
     width: 90%;
-    max-width: @value__container--width;
-    padding: 30px 70px;
 
     @media @bp-global-below-fullwidth {
         width: 100%;
@@ -224,18 +224,44 @@ body {
         background-color: @color__header--background;
         border-bottom: 1px solid lighten(@color__header--background, 5%);
     }
+}
 
 
-    // Container
-	.container {
-		.flex-display;
-		.justify-content(space-between);
+// Header: Additional
+// ------------------------------
+
+// For default page and when feature is hidden
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header,
+.template-header {
+    position: relative;
+    z-index: 99;
+    max-width: @value__container--width;
+    padding: 30px 70px;
+    width: 100%;
+    background-color: @color__container--background;
+    min-height: auto;
+    border-bottom: 1px solid lighten(@color__container--background, 30%);
+
+
+    // Flex Item
+    @media @mobile {
+        .flex-item:first-child,
+        .flex-item:last-child {
+            background-color: darken(@color__container--background, 4%);
+            border-bottom: 1px solid darken(@color__container--background, 10%);
+        }
+    }
+
+     // Container
+    .container {
+        .flex-display;
+        .justify-content(space-between);
         .align-items(center);
 
         @media @mobile {
             display: block;
         }
-	}
+    }
 
     // Flex Item
     .flex-item {
@@ -270,31 +296,6 @@ body {
                 right: 0;
                 width: 20%;
             }
-        }
-    }
-}
-
-
-// Header: Additional
-// ------------------------------
-
-// For default page and when feature is hidden
-.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header,
-.page--default .template-header {
-    position: relative;
-    z-index: 99;
-    width: 100%;
-    background-color: @color__container--background;
-    min-height: auto;
-    border-bottom: 1px solid lighten(@color__container--background, 30%);
-
-
-    // Flex Item
-    @media @mobile {
-        .flex-item:first-child,
-        .flex-item:last-child {
-            background-color: darken(@color__container--background, 4%);
-            border-bottom: 1px solid darken(@color__container--background, 10%);
         }
     }
 
@@ -380,12 +381,12 @@ body {
     }
 }
 
-.widget[data-widget-type="feature"].bk-tpl-hidden + .feature-arrow,
+.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header + .feature-arrow,
 .feature-arrow {
   display: none;
 }
 
-.widget[data-widget-type="feature"] + .feature-arrow,
+[data-widget-type="feature"] + .template-header + .feature-arrow,
 .feature + .feature-arrow {
   display: block;
 }
