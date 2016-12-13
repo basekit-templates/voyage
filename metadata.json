@@ -42,7 +42,7 @@
             "font-family": "\"Orbitron\", sans-serif",
             "font-size": "24px",
             "font-weight": "400",
-            "line-height": "36px",
+            "line-height": "38px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -230,6 +230,11 @@
             "color__socialicons--icon--hover" : "black",
             "color__socialicons--icon--background" : "transparent",
             "color__socialicons--icon--background--hover" : "white"
+        },
+        "twitter": {
+            "color__twitter-item--background": "#262626",
+            "color__twitter-account-name--text": "#ffffff",
+            "color__twitter-tweet--text": "#ffffff"
         },
         "menu": {
             "color__menusections--background" : "@color__secondary",
