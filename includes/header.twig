@@ -3,10 +3,8 @@
 	<div class="container">
 
 		<div class="companyname-logo">
-			{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
-			{{widget('companyname', 'companyname', {
-				"business": "profile",
-			})|raw}}
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
 		</div>
 		<div class="flex-item">
 			<div class="template-navigation">
