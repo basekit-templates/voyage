@@ -17,13 +17,13 @@
     margin: 0 0 @value__widget--spacing--desktop;
 
     @media @bp-global-medium {
-        margin: 0 0 @value__widget--spacing--laptop;
+        margin: 0 @value__widget--spacing--laptop; @value__widget--spacing--laptop;
     }
     @media @tablet {
-        margin: 0 0 @value__widget--spacing--tablet @value__widget--spacing--tablet;
+        margin: 0 @value__widget--spacing--tablet @value__widget--spacing--tablet @value__widget--spacing--tablet;
     }
     @media @mobile {
-        margin: 0 0 @value__widget--spacing--mobile @value__widget--spacing--mobile;
+        margin: 0 @value__widget--spacing--tablet @value__widget--spacing--mobile @value__widget--spacing--mobile;
     }
 
     &:first-child {
