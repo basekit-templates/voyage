@@ -107,7 +107,7 @@ body {
    }
 
    @media @tablet {
-        height: 60px;
+        height: 80px;
         margin-top: -100px;
    }
 
@@ -229,7 +229,6 @@ body {
         position: relative;
         order: 1;
         padding: 20px;
-        background-color: @color__header--background;
         border-bottom: 1px solid lighten(@color__header--background, 5%);
     }
 }
@@ -299,7 +298,7 @@ body {
                 min-height: 43px;
             }
             &:nth-child(2) {
-                margin-top: 20px;
+                margin-top: 10px;
             }
             &:last-child {
                 position: absolute;
@@ -400,6 +399,9 @@ body {
 [data-widget-type="feature"] + .template-header + .feature-arrow,
 .feature + .feature-arrow {
   display: block;
+  @media @mobile {
+    display: none;
+  }
 }
 
 
