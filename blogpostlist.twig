@@ -7,13 +7,16 @@
 
     {% include "includes/header.twig" %}
 
-    <div class="page-title">
-        {{widget('pagetitle', 'page-title', {})|raw}}
-    </div>
-
 
     <!-- Zone Content -->
     <div class="main-content">
+
+        <div class="page-title">
+
+            {{widget('pagetitle', 'page-title', {})|raw}}
+
+        </div>
+        
         <div class="container">
 
             {{zone('main')|raw}}
